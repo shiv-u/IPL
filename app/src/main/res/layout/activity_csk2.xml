@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/csklogo" />
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="Score"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cskscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingLeft="50dp"
+                    android:text="0/ "
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/cskwickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cskscore"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="overs"
+
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:text="0.0"
+                android:id="@+id/cskovers"
+                android:textColor="@android:color/white"
+                android:textSize="52sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstlayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <Button
+
+                android:id="@+id/scoreThreeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons"
+                android:onClick="onerun"
+                android:text="1 run"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons"
+                android:onClick="tworun"
+                android:text="2 run"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons"
+                android:onClick="fourruns"
+                android:text="4 runs"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons"
+                android:onClick="sixruns"
+                android:text="6 runs"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/buttons"
+                android:onClick="wicket"
+                android:text="wicket"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trans"
+        android:text="Match Results"
+        android:onClick="matchresults"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
