@@ -22,6 +22,7 @@
         <activity android:name=".rcbbatting" />
         <activity android:name=".rcbwin"/>
         <activity android:name=".cskwin"/>
+        <activity android:name=".draw"/>
     </application>
 
 </manifest>

@@ -95,9 +95,14 @@ public class csk extends AppCompatActivity {
             Intent intent = new Intent(this, rcbwin.class);
             startActivity(intent);
         }
-        else
+        else if(cskscore>rcbscore)
         {
             Intent intent = new Intent(this,cskwin.class);
+            startActivity(intent);
+        }
+        else
+        {
+            Intent intent = new Intent(this,draw.class);
             startActivity(intent);
         }
     }
